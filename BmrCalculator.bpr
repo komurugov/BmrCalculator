@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="BmrCalculator.exe"/>
-    <OBJFILES value="BmrCalculator.obj UnitMain.obj"/>
+    <OBJFILES value="BmrCalculator.obj UnitMain.obj Core.obj"/>
     <RESFILES value="BmrCalculator.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -12,7 +12,7 @@
     <RESDEPEN value="$(RESFILES) UnitMain.dfm"/>
     <LIBFILES value=""/>
     <LIBRARIES value=""/>
-    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib adortl.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
       vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
       teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
@@ -57,6 +57,7 @@
       <FILE FILENAME="BmrCalculator.res" FORMNAME="" UNITNAME="BmrCalculator.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="BmrCalculator.cpp" FORMNAME="" UNITNAME="BmrCalculator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="UnitMain.cpp" FORMNAME="MainForm" UNITNAME="UnitMain" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Core.cpp" FORMNAME="" UNITNAME="Core" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
