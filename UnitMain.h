@@ -17,6 +17,7 @@ __published:	// IDE-managed Components
 	TButton *ButtonGo;
         TOpenDialog *OpenDialogMdb;
 	TMemo *MemoResults;
+	TADODataSet *Contracts;
         void __fastcall ButtonGoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

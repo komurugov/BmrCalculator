@@ -10,7 +10,20 @@
 #pragma package(smart_init)
 
 
-bool Core::CalculateClassAndRatioByDB(AnsiString fileName, AnsiString & bmsClass, float & ratio)
+#include "DataBase.h"
+
+
+bool Core::CalculateClassAndRatioByDB(AnsiString fileName, TADODataSet * contracts, AnsiString & bmsClass, float & ratio)
 {
-	return false;	// пока заглушка
+	try
+        {
+	        if (!DataBase::PrepareContractsHistory(fileName, contracts))
+        		return false;
+
+		return false;	// пока заглушка
+        }
+        catch (...)
+        {
+        	return false;
+        }
 }

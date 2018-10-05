@@ -33,4 +33,9 @@ object MainForm: TMainForm
   object OpenDialogMdb: TOpenDialog
     Filter = '*.mdb'
   end
+  object Contracts: TADODataSet
+    Parameters = <>
+    Left = 33
+    Top = 3
+  end
 end

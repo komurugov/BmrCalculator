@@ -26,13 +26,13 @@ void __fastcall TMainForm::ButtonGoClick(TObject *Sender)
 	{
         	AnsiString bmsClass = "";
                 float ratio;
-        	if (Core::CalculateClassAndRatioByDB(OpenDialogMdb->FileName, bmsClass, ratio))
+        	if (Core::CalculateClassAndRatioByDB(OpenDialogMdb->FileName, Contracts, bmsClass, ratio))
                 {
                 	MemoResults->Lines->Add("Класс: " + bmsClass + ".");
                         MemoResults->Lines->Add("Коэффициент = " + FormatFloat("0.00", ratio) + ".");
                 }
                 else
-                	MemoResults->Lines->Add("Не удалось провести расчет.");
+                	MemoResults->Lines->Add("Не удалось загрузить данные или провести расчет.");
     	}
 }
 //---------------------------------------------------------------------------

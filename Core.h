@@ -4,15 +4,14 @@
 #define CoreH
 
 
-//#include <string>
-//using namespace std;
-
 #include <system.hpp>
+#include <ADODB.hpp>
+
 
 class Core
 {
 public:
-	static bool CalculateClassAndRatioByDB(AnsiString fileName, AnsiString & bmsClass, float & ratio);
+	static bool CalculateClassAndRatioByDB(AnsiString fileName, TADODataSet * contracts, AnsiString & bmsClass, float & ratio);
 };
 
 
