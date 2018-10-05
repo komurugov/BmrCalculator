@@ -11,7 +11,11 @@
 class Core
 {
 public:
-	static bool CalculateClassAndRatioByDB(AnsiString fileName, TADODataSet * contracts, AnsiString & bmsClass, float & ratio);
+	static bool CalculateClassAndRatioByDB(
+        	AnsiString fileName,
+                TADODataSet * contracts,	// указатель на созданный экземпл€р (потому что создавать удобнее средствами визуальной разработки)
+                AnsiString & bmsClass,
+                float & ratio);
 };
 
 

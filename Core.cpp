@@ -11,6 +11,7 @@
 
 
 #include "DataBase.h"
+#include "Bms.h"
 
 
 bool Core::CalculateClassAndRatioByDB(AnsiString fileName, TADODataSet * contracts, AnsiString & bmsClass, float & ratio)
@@ -19,8 +20,9 @@ bool Core::CalculateClassAndRatioByDB(AnsiString fileName, TADODataSet * contrac
         {
 	        if (!DataBase::PrepareContractsHistory(fileName, contracts))
         		return false;
-
-		return false;	// пока заглушка
+                if (!Bms::CalculateClassAndRatio(contracts, bmsClass, ratio))
+                	return false;
+		return true;
         }
         catch (...)
         {
